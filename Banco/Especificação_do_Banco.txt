@@ -1,0 +1,32 @@
+Implemente uma simples modelagem do mundo real de instituições financeiras como Banco.
+
+Bancos possuem agencias espalhadas nas cidades, e as agências possuem contas correntes de clientes.
+
+Só existe conta corrente se houver um cliente associado, e não há clientes sem conta corrente.
+
+Também as contas correntes devem possuir uma única e exclusiva agência.
+
+Com base nessas restrições, modele as classes Cliente, Conta Corrente e Agência, com alguns atributos básicos e alguns comportamentos simples como:
+
+Nos Clientes, é possível:
+Cadastrar informações pessoais
+Vincular uma única conta corrente, se ainda não houver conta corrente associada
+Ver saldo, sacar e depositar na conta corrente associada
+
+Nas Contas Correntes, é possível:
+Associar a Conta a um Cliente, se ainda não houver cliente associado
+Ver Saldo
+Depositar, que aumenta o saldo
+Sacar, se o saque for menor ou igual ao saldo
+Ver o número da Conta Corrente e o número da Agência associada.
+
+Nas Agências, é possível:
+Criar novos Clientes
+Criar Conta Corrente para algum Cliente novo
+Excluir Conta Corrente, se o saldo for zero.
+
+Por fim, crie uma clase executável Banco, que possui uma lista de Contas Correntes.
+
+Nesta classe, crie clientes, contas, associe-os e realize operações, observando e testando todas as restrições (não se pode associar um cliente a uma conta
+ já associada e vice versa, não se pode sacar valor maior que saldo, verificar a atualização do saldo ao sacar e depositar em uma conta específica, verificar
+ o comportamento em diferentes contas e observar os dados sendo manipulados em cada conta específica. *
